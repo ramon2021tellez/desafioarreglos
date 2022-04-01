@@ -4,16 +4,12 @@ data = data.map do |reg|
     reg.split(',')
 end
 def nota_mas_alta(arr)
-    notas = arr[1..5]
-
-    notas = notas.map do |note|
-        note.to_i
-    end 
-    notas.max
+    nuevo = data.select do |element|
+    numero = element.max
+    end
 end
-
+print numero
 print nota_mas_alta(data[0]) 
-print nota_mas_alta(data[1]) 
-    
+
 
 
